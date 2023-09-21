@@ -1,7 +1,9 @@
 header {
     background-color: #424242; 
     color: #fff; 
-    padding: 0.05%; 
+    padding: 0.5px ; 
+    position: fixed;
+    top: 0;
 }
 
 /* Estilo para la lista de navegación */
@@ -16,8 +18,16 @@ nav li {
     margin-right: 20px; 
     margin-left: 20px; 
     font-size: 0.7em;
+   
 
 }
+
+.right {
+    float: right;
+    margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
+}
+
+
 
 /* Estilo para los enlaces en la lista de navegación */
 nav a {
@@ -33,47 +43,68 @@ nav a:hover {
 
 
 /*__________________________________________________________________*/
-/* Estilos para el contenedor de la imagen */
-.seccion-principal {
-    background-color: rgb(254, 242, 255);
-    padding: 20px; 
-    height: 450px;  
-    }
-    
-   
+  
+}
+
+.right {
+    float: right;
+    margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
+}
 
 /*__________________________________________________________________*/    
-   /* Estilos para el contenido en el centro izquierdo */
-.contenido-izquierdo {
-    width: 80%;   
-    max-width: 300px; 
-    margin: 0 auto; 
-    margin-top: 47px;
-    padding: 20px; 
-    border: 1px solid #ccc; 
+
+/* Estilo para la sección */
+.seccion {
+    padding: 20px;
+    display: flex; /* Utiliza flexbox para alinear elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: left; /* Alinea el texto al centro (opcional) */
+    background-color: rgb(254, 242, 255); /* Color de fondo de la sección (opcional) */
 }
 
-/* Estilo para el texto */
-.texto-responsivo {
-    font-size: 1rem; 
-    line-height: 1.4; 
+.seccion-texto {
+    
+    display: flex; /* Utiliza flexbox para alinear elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    text-align: left; /* Alinea el texto al centro (opcional) */
+    width: 300px; 
+    height: 200px
+    
+   
 }
 
+/* Estilo para el contenido de texto */
+.texto {
+    flex: 1; /* Ocupa el espacio disponible */
+    min-width: 300px;
+    padding: 20px; /* Espaciado interno (ajusta según tus necesidades) */
+    margin-right: 20px; /* Espacio entre el texto y la imagen (ajusta según tus necesidades) */
+    
+}
 
+/* Estilo para la imagen */
+.imagen img {
+    order: 2;
+    min-width: 200px;   
+    height: auto; /* Altura automática para mantener la proporción */
+    max-height: 450px; /* Altura máxima de la imagen (ajusta según tus necesidades) */
+}
 
+ /*NO SE POR QUE ESTA LLAVE HACE QUE EL BOTON QUEDE DENTRO♥/*
 /*__________________________________________________________________*/
     /* Estilos para el botón superpuesto */
     .boton-superpuesto {
     position: absolute;
-    bottom: 10%;
+    bottom: 41%;
     left: 0;
-    transform: translateY(-50%);
+    margin: 0px;
     background-color: #931fff; 
     color: white; 
-    padding: 15px; 
-      
+    padding: 20px; 
     border: none; 
-        cursor: pointer;
+    cursor: pointer;
     }
     
     .boton-superpuesto:hover {
