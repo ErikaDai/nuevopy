@@ -17,12 +17,16 @@ nav li {
     margin-right: 20px; 
     margin-left: 20px; 
     font-size: 0.7em;
-   }
+   
+
+}
 
 .right {
     float: right;
-    margin-left: 10px; 
+    margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
 }
+
+
 
 /* Estilo para los enlaces en la lista de navegación */
 nav a {
@@ -37,14 +41,13 @@ nav a:hover {
 }
 
 
-/*__________________________________________________________________*/
-  
-   
+/*__________________________________________________________________*/    
+
 /* Estilo para la sección */
 .seccion {
     padding: 20px;
     display: flex; 
-    justify-content: center; 
+    justify-content: center;
     align-items: center; 
     text-align: left; 
     background-color: rgb(254, 242, 255); 
@@ -56,8 +59,10 @@ nav a:hover {
     justify-content: center; 
     align-items: center; 
     text-align: left; 
+    width: 300px; 
     height: 200px
-      
+    
+   
 }
 
 /* Estilo para el contenido de texto */
