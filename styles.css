@@ -1,9 +1,7 @@
 header {
     background-color: #424242; 
     color: #fff; 
-    padding: 0.5px ; 
-    position: fixed;
-    top: 0;
+    padding: 0.05%; 
 }
 
 /* Estilo para la lista de navegación */
@@ -43,13 +41,14 @@ nav a:hover {
 
 
 /*__________________________________________________________________*/
-  
-}
-
-.right {
-    float: right;
-    margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
-}
+/* Estilos para el contenedor de la imagen */
+.seccion-principal {
+    background-color: rgb(254, 242, 255);
+    padding: 20px; 
+    height: 450px;  
+    }
+    
+   
 
 /*__________________________________________________________________*/    
 
@@ -114,4 +113,3 @@ nav a:hover {
     font-weight: bold; 
     font-size: 15px;
     }
-
