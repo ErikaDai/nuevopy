@@ -1,0 +1,86 @@
+header {
+    background-color: #424242; 
+    color: #fff; 
+    padding: 0.05%; 
+}
+
+/* Estilo para la lista de navegación */
+nav ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+/* Estilo para los elementos de la lista de navegación */
+nav li {
+    display: inline; 
+    margin-right: 20px; 
+    margin-left: 20px; 
+    font-size: 0.7em;
+
+}
+
+/* Estilo para los enlaces en la lista de navegación */
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+/* Estilo para los enlaces cuando se pasan por encima con el cursor */
+nav a:hover {
+    color: #931fff; 
+}
+
+
+/*__________________________________________________________________*/
+/* Estilos para el contenedor de la imagen */
+.seccion-principal {
+    background-color: rgb(254, 242, 255);
+    padding: 20px; 
+    height: 450px;  
+    }
+    
+   
+
+/*__________________________________________________________________*/    
+   /* Estilos para el contenido en el centro izquierdo */
+.contenido-izquierdo {
+    width: 80%;   
+    max-width: 300px; 
+    margin: 0 auto; 
+    margin-top: 47px;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+}
+
+/* Estilo para el texto */
+.texto-responsivo {
+    font-size: 1rem; 
+    line-height: 1.4; 
+}
+
+
+
+/*__________________________________________________________________*/
+    /* Estilos para el botón superpuesto */
+    .boton-superpuesto {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #931fff; 
+    color: white; 
+    padding: 15px; 
+      
+    border: none; 
+        cursor: pointer;
+    }
+    
+    .boton-superpuesto:hover {
+               
+    background-color: #931fff;
+    color: #ffffff;
+    font-weight: bold; 
+    font-size: 15px;
+    }
+
