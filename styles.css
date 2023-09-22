@@ -1,38 +1,32 @@
+body {
+    background-color: black;
+}
+
 header {
     background-color: #424242; 
-    color: #fff; 
-    padding: 0.5px ; 
-    text-align: fixed;
-    position: absolute; /* Posición inicial absoluta */
-    width: 100%;
-    height: 4%;
-    top: 0; /* Inicialmente en la parte superior */
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8px;
+    padding: 20px ;
+    top: 0;
 }
 
-/* Estilo para la lista de navegación */
-nav ul {
-    list-style: none; 
-    padding: 0; 
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Estilo para los elementos de la lista de navegación */
-nav li {
-    display: inline; 
-    margin-right: 10px; 
-    margin-left: 10px; 
-    font-size: 0.7em;
-   
-
+nav a {
+    text-decoration: none;
+    color: white;
 }
 
-.right {
-    display: inline; 
-    float: right;
-    margin-top: 4px;
-    margin-right: 10px;
-    margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
-}
+
+.derecha /*QUIERO ALINEARLOS A LA DERECHA/*
+    
+    
+
 
 
 
@@ -41,9 +35,9 @@ nav a {
     text-decoration: none; 
     color: #fff; 
     font-weight: bold; 
+    font-size: 13px;
 }
 
-/* Estilo para los enlaces cuando se pasan por encima con el cursor */
 nav a:hover {
     color: #931fff; 
 }
@@ -51,51 +45,50 @@ nav a:hover {
 
 /*__________________________________________________________________*/    
 
-/* Estilo para la sección */
-.seccion {
-    margin-top: 10px;
+.seccion1 {
+    
     padding: 20px;
     display: flex; 
+    text-align: center;
+    align-items: center; 
+    background-color: rgb(238, 226, 243);
+    height: 700px;
+}
+
+.contenedor1 {
+    
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    text-align: left; 
-    background-color: rgb(238, 226, 243); 
+    align-items: center;
+    min-width: 400px;
+    text-align: center;
+       
+        
 }
-
-.seccion-texto {
+.texto1 {
     
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    color: #5e166d;
     text-align: left; 
-    width: 300px; 
-    height: 200px;
-      
-}
-
-/* Estilo para el contenido de texto */
-.texto {
-    flex: 1; 
-    min-width: 300px;
+    max-width: 70%; 
     padding: 20px; 
-    margin-right: 20px; 
-    color: #7031af;
-    
+    font-size: 16px; 
     
 }
 
-/* Estilo para la imagen */
+.texto1 h1 {
+    font-size: 36px;
+}
+
 .imagen img {
-    order: 2;
-    min-width: 200px;   
-    height: auto; 
-    max-height: 450px; 
+    
+    height: 600px;
+    width: auto; 
 }
 
 
 /*__________________________________________________________________*/
     /* Estilos para el botón superpuesto */
-    .boton-superpuesto {
+.boton-superpuesto {
     position: absolute;
     bottom: 41%;
     left: 0;
@@ -105,19 +98,18 @@ nav a:hover {
     padding: 20px; 
     border: none; 
     cursor: pointer;
-    }
+}
     
-    .boton-superpuesto:hover {
+.boton-superpuesto:hover {
                
     background-color: #931fff;
     color: #ffffff;
     font-weight: bold; 
     font-size: 15px;
-    }
+}
 
-    /*______________________________________________________________/*
-
-    /* Estilo para la sección2 */
+/*__________________________________________________________________*/
+    
 .seccion2 {
     
     padding: 20px;
@@ -125,7 +117,7 @@ nav a:hover {
     justify-content: center;
     align-items: center; 
     background-color: #424242;
-    height: 250px;
+    height: 400px;
 }
 
 .contenedor2 {
@@ -134,18 +126,18 @@ nav a:hover {
     align-items: center;
     
 }
+
 .texto2 {
     color: #ffffff;
-    text-align: center; /* Alinea el texto al centro horizontalmente */
-    max-width: 100%; /* Limita el ancho máximo del texto para mantener la legibilidad */
-    padding: 20px; /* Espaciado interior opcional para mejorar la legibilidad */
-    font-size: 16px; /* Cambia el tamaño del texto según tus necesidades */
-
+    text-align: center; 
+    max-width: 95%; 
+    padding: 20px; 
+    font-size: 16px; 
 }
 
  /*______________________________________________________________*/
  
- .seccion3 {
+.seccion3 {
     
     padding: 20px;
     display: flex; 
