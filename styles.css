@@ -2,7 +2,12 @@ header {
     background-color: #424242; 
     color: #fff; 
     padding: 0.5px ; 
-    top: 0;
+    text-align: fixed;
+    position: absolute; /* Posición inicial absoluta */
+    width: 100%;
+    height: 4%;
+    top: 0; /* Inicialmente en la parte superior */
+
 }
 
 /* Estilo para la lista de navegación */
@@ -14,15 +19,18 @@ nav ul {
 /* Estilo para los elementos de la lista de navegación */
 nav li {
     display: inline; 
-    margin-right: 20px; 
-    margin-left: 20px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
     font-size: 0.7em;
    
 
 }
 
 .right {
+    display: inline; 
     float: right;
+    margin-top: 4px;
+    margin-right: 10px;
     margin-left: 10px; /* Espacio entre elementos (ajusta según tus necesidades) */
 }
 
@@ -45,12 +53,13 @@ nav a:hover {
 
 /* Estilo para la sección */
 .seccion {
+    margin-top: 10px;
     padding: 20px;
     display: flex; 
     justify-content: center;
     align-items: center; 
     text-align: left; 
-    background-color: rgb(254, 242, 255); 
+    background-color: rgb(238, 226, 243); 
 }
 
 .seccion-texto {
@@ -60,9 +69,8 @@ nav a:hover {
     align-items: center; 
     text-align: left; 
     width: 300px; 
-    height: 200px
-    
-   
+    height: 200px;
+      
 }
 
 /* Estilo para el contenido de texto */
@@ -71,6 +79,8 @@ nav a:hover {
     min-width: 300px;
     padding: 20px; 
     margin-right: 20px; 
+    color: #7031af;
+    
     
 }
 
@@ -82,7 +92,7 @@ nav a:hover {
     max-height: 450px; 
 }
 
- /*NO SE POR QUE ESTA LLAVE HACE QUE EL BOTON QUEDE DENTRO♥/*
+
 /*__________________________________________________________________*/
     /* Estilos para el botón superpuesto */
     .boton-superpuesto {
@@ -104,3 +114,44 @@ nav a:hover {
     font-weight: bold; 
     font-size: 15px;
     }
+
+    /*______________________________________________________________/*
+
+    /* Estilo para la sección2 */
+.seccion2 {
+    
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #424242;
+    height: 250px;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto2 {
+    color: #ffffff;
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    max-width: 100%; /* Limita el ancho máximo del texto para mantener la legibilidad */
+    padding: 20px; /* Espaciado interior opcional para mejorar la legibilidad */
+    font-size: 16px; /* Cambia el tamaño del texto según tus necesidades */
+
+}
+
+ /*______________________________________________________________*/
+ 
+ .seccion3 {
+    
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(238, 226, 243);
+    height: 250px;
+}
+
