@@ -8,7 +8,7 @@ header {
     padding: 4px ; 
     top: 0;
     
-    
+   
     
 }
 
@@ -31,7 +31,7 @@ nav li {
 
 .right {
     float: right;
-    margin-left: 10px;
+    
     
 }    
 
@@ -82,12 +82,12 @@ nav a:hover {
 }
 
 .texto1 h1 {
-    font-size: 36px;
+    font-size: 50px;
 }
 
 .imagen img {
     
-    height: 600px;
+    height: 800px;
     width: auto; 
 }
 
@@ -96,9 +96,8 @@ nav a:hover {
     /* Estilos para el botón superpuesto */
 .boton-superpuesto {
     position: absolute;
-    bottom: 41%;
-    left: 0;
-    margin: 0px;
+    
+    margin-left: 80;
     background-color: #931fff; 
     color: white; 
     padding: 20px; 
