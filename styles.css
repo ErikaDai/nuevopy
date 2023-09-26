@@ -13,6 +13,8 @@ body {
     top: 0;
     padding: 10px;
     overflow: hidden;
+    
+   
 }
 
 /* Estilo para los elementos de la lista de navegación */
@@ -24,6 +26,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
+    max-width: 100vh;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -58,6 +61,7 @@ nav a:hover {
     background-color: #efe0f3;
     height: 100vh;
     
+        
 }
 
 .contenedor1 {
@@ -77,13 +81,7 @@ nav a:hover {
 
 .texto1 h1 {
     font-size: 55px;
-}
-
-
-.imagen img {
-    max-height: 700px; 
-    float: left;
-    
+        
 }
 
 
