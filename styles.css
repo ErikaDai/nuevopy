@@ -1,56 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     margin: 0;
-    
 }
 
-header {
+#header {
     background-color: #424242; 
     position: sticky;
     top: 0;
     padding: 10px;
-    z-index: 1000;
-    
-    
-   
-    
-}
-
-/* Estilo para la lista de navegación */
-section {
-    margin-top: 80px; /* Ajusta la distancia para que el contenido no quede oculto detrás del header */
-    
+    overflow: hidden;
 }
 
 /* Estilo para los elementos de la lista de navegación */
-#header ul li {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+    text-align: center; 
+}
+nav ul li {
     display: inline;
     margin-right: 20px;
     margin-left: 20px;
-    
-    
-    
- 
 }
-
-section {
-    margin-top: 0px; /* Ajusta la distancia para que el contenido no quede oculto detrás del header */
-    
-}
-
-.right {
-    float: right;
-    
-    
-}    
-
 
 /* Estilo para los enlaces en la lista de navegación */
-nav li a {
+nav ul li a {
     text-decoration: none; 
     color: #fff; 
     font-weight: bold; 
     font-size: 13px;
+}
+
+nav ul li.left {
+    float: left;
+}
+nav ul li.right {
+    float: right;
 }
 
 nav a:hover {
@@ -58,15 +48,14 @@ nav a:hover {
 }
 
 
-/*__________________________________________________________________*/    
-
-.seccion1 {
+/*______________________________________________________________________*/    
+#inicio {
     
     padding: 20px;
     display: flex; 
-    text-align: left;
+    justify-content: center;
     align-items: center; 
-    background-color: rgb(238, 226, 243);
+    background-color: #efe0f3;
     height: 100vh;
     
 }
@@ -75,23 +64,15 @@ nav a:hover {
     
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-width: 600px;
-    margin-right: 150px;
-    
-
-         
-        
+    align-items: center;      
 }
 .texto1 {
     
     color: #5e166d;
-    text-align: left; 
-    max-width: 70%; 
-    padding: 10px; 
-    font-size: 20px; 
-
-    
+    text-align: center; 
+    max-width: 95%; 
+    padding: 20px; 
+    font-size: 16px; 
 }
 
 .texto1 h1 {
@@ -107,18 +88,15 @@ nav a:hover {
 
 
 /*__________________________________________________________________*/
-    /* Estilos para el botón superpuesto */
+/* Estilos para el botón superpuesto */
 .boton-superpuesto {
-    position: absolute;
-    
-    margin-left: 80;
+      
     background-color: #931fff; 
     color: white; 
     padding: 20px; 
     border: none; 
     cursor: pointer;
 }
-    
 .boton-superpuesto:hover {
                
     background-color: #931fff;
@@ -128,8 +106,7 @@ nav a:hover {
 }
 
 /*__________________________________________________________________*/
-    
-.seccion2 {
+#sobre-nosotros {
     
     padding: 20px;
     display: flex; 
@@ -154,15 +131,14 @@ nav a:hover {
     font-size: 16px; 
 }
 
- /*______________________________________________________________*/
- 
-.seccion3 {
+/*_________________________________________________________________*/
+#contacto {
     
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center; 
-    background-color: rgb(238, 226, 243);
+    background-color: #efe0f3;
     height: 100vh;
 }
 
