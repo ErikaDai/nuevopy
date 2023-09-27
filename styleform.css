@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+     
+}
+
+label{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    color: blueviolet;
+}
+
+.imagenf {
+    
+    height: 300px;
+    width: 200px;
+    display: flex;
+    padding-left: 700px;
+}
