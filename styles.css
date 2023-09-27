@@ -157,19 +157,20 @@ nav a:hover {
     height: 100vh;
 }
 
-.contenedor3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+label{
+    color: #000000;
 }
 
-.texto3 {
-    color: #451168;
-    text-align: center; 
-    max-width: 95%; 
-    padding: 20px; 
-    font-size: 19px; 
+h2{
+    color: #931fff;
+}
+
+.imagenf {
+    
+    height: 300px;
+    width: 200px;
+    display: flex;
+    
 }
 
 /*_________________________________________________________________*/
