@@ -75,7 +75,8 @@ nav a:hover {
 .texto1 {
     flex: 1;
     color: #5e166d;
-    text-align: left; 
+    text-align: left;
+    
    
     padding: 20px; 
     font-size: 20px; 
@@ -84,8 +85,15 @@ nav a:hover {
 .texto1 h1 {
     flex: 1;
     font-size: 60px;
-        
+    font-family: 'Abril Fatface', cursive;      
 }
+
+.texto1 h2 {
+    flex: 1;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
    
