@@ -6,8 +6,6 @@
     <title>Mystery Boxes</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="/imagenes/regalitoico.ico" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 
 <body>
@@ -28,8 +26,8 @@
     <section id="inicio">     
         <div class="contenedor1">
             <div class="texto1">
-                <h2><b>MysteryBoxes.</b></h2> 
-                <h3>Despierta tu curiosidad y emoción con nuestras MysteryBoxes! </h3> 
+                <h1><b>MysteryBoxes.</b></h1> 
+                <h2>Despierta tu curiosidad y emoción con nuestras MysteryBoxes! </h2> 
                 <p>Elige la temática que más te apasione, ya sea belleza, snacks divertidos o cualquier otra <br>
                     ¿Quién dijo que no puedes darte un capricho sin saber qué obtendrás? <br>
                     Nuestras Boxes están diseñadas para sorprenderte, <br>
@@ -62,35 +60,36 @@
 
     <section id="contacto">      
         <div class="contacto">
-            <h5>Formulario de contacto</h5>
+            <h2>Formulario de contacto</h2>
         
             <form action="">
                 <label for="firstname">Nombre:</label>
-                <input size=15 id="firstname" type="text">
+                <input size=15 id="firstname" type="text" required>
                 <br><br>
                 <label for="lastname">Apellido:</label>
-                <input size=15 id="lastname" type="text">
+                <input size=15 id="lastname" type="text" required>
                 <br><br>
-                <label for="dni">DNI:       </label>
-                <input maxlength=10 size=15 id="dni" type="text">
+                 <label for="floatingInputValue">E-Mail:</label>
+                 <input type="email" class="form-control" id="floatingInputValue" placeholder="tucorreo@ejemplo.com" required>
                 <br><br>
-                <label for="E-mail">E-Mail:</label>
+                <label for="Telefono">Teléfono:</label>
                 <input size=15 id="E-mail" type="text">
+                <p class="motivo1">Motivo de consulta:</p>
+                <select name="motivo">
+                    <option>Precios</option>
+                    <option>Envios</option>
+                    <option>Personalización de box</option>
+                    <option>Otros</option>
+                </select>
                 <br><br>
-                <label for="password">Contraseña:</label>
-                <input type="password" size="15" id="password" maxlength="8">
-                <br><br>
-                <label for="password">Vuelva a escribir su contraseña:</label>
-                <input type="password" size="15" id="password" maxlength="8">
-               
-                <p><i>La contraseña debe contener al menos 8 carácteres y contener al menos un número y una mayúscula</i></p>
-               
-                <p><b>¿Cómo llegó a nosotros?</b></p>
-                <textarea name="comements" id="" cols="30" rows="5">Escribe aquí</textarea>
+                <p class="mensaje1">Mensaje:</p>
+                <textarea name="comments" id="" cols="40" rows="15">Escribe aquí</textarea>
                 <br>
-                <input type="submit" value="enviar">
-               
-            
+                <button type="submit" class="enviar">Enviar</button>
+                <button type="submit" class="borrar">Borrar</button>
+                
+            </div>
+                
             </form>
         
         </div>

@@ -18,75 +18,38 @@ body {
 .navbar{
     background-color: #424242; 
     position: sticky;
-    height: 48px;
-  
-    padding: 10px 12px;
-        
-     
-}
-
-.checkbox, .icons{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    cursor: pointer;
+    top: 0;
+    padding: 15px;
+    overflow: hidden;
     
-
+    
+   
 }
 
-.icons{
-    pointer-events: none;
-    font-size: 24px;
-
+/* Estilo para los elementos de la lista de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+    text-align: center; 
+}
+nav ul li {
+    display: inline;
+    max-width: 100vh;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.checkbox{
-    opacity: 0;
+/* Estilo para los enlaces en la lista de navegación */
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 13px;
 }
 
-.fi-br-cross{
-    display: none;
-}
-
-.checkbox:checked ~ .fi-bs-menu-burger{
-    display: none
-}
-
-.checkbox:checked ~ .fi-br-cross{
-    display: block;
-}
-
-.menu{
-    width: 200px;
-    position: absolute;
-    top: -106px;
-    z-index: -1;
-    right: 0px;
-    transition: 250ms;
-
-}
-.menu li{
-    list-style: none;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: white;
-    background-color: #424242;
-    display: block;
-    padding: 10px 12px;
-
-}
-
-.menu li a:hover{
-    background-color: #931fff;
-}
-
-.checkbox:checked ~ .menu{
-   /* display: block;*/
-   top: 48px ;
+nav ul li.left {
+    float: left;
 }
 
 @media (min-width: 560px){
@@ -134,7 +97,7 @@ body {
 }
 .texto1 {
     flex: 1;
-    color: #000000;
+    color: #5e166d;
     text-align: left; 
    
     padding: 20px; 
@@ -144,17 +107,17 @@ body {
 .texto1 h2 {
     flex: 1;
     font-size: 60px;
-    color: #931fff;
         
 }
-
-
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
-   
+}
 
-
-    
+.texto1-1 {
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: flex-end;
 }
     
 
@@ -221,11 +184,12 @@ body {
 }
 
 label{
+    font-size: 20px;
     color: #000000;
 }
 
 h2{
-    color: #6d178f;
+    color: #931fff;
 }
 
 .imagenf {
@@ -236,6 +200,23 @@ h2{
     
 }
 
+.motivo1{
+    font-size: 20px;
+}
+
+.mensaje1 {
+    font-size:  20px;
+}
+.enviar{
+    background-color: #5e166d;
+    color: white;
+    
+}
+.borrar{
+    background-color: #5e166d;
+    color: white;
+    
+}
 /*_________________________________________________________________*/
 #footer {
     
