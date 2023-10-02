@@ -132,6 +132,15 @@ body {
     
     
 }
+
+.texto1 {
+    flex: 1;
+    color: #000000;
+    text-align: left; 
+    padding: 20px; 
+    font-size: 20px; 
+}
+
 .texto1 h2 {
     flex: 1;
     font-size: 60px;
@@ -139,22 +148,17 @@ body {
     color: #5e166d;
 }
 
-.texto1 h3 {
-    flex: 1;
-    font-size: 30px;
-    font-family: 'Abril Fatface', cursive;
+.texto1 h3{
+    font-family: 'Abril Fatface', cursive;      
+    
 }
+
 
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
 }
 
-.texto1-1 {
-    font-size: 17px;
-    font-weight: lighter;
-    font-family: 'Abril Fatface', cursive;
-    justify-content: flex-end;
-}
+
     
 
 
