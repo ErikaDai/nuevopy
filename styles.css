@@ -210,13 +210,20 @@ body {
     font-size: 16px; 
 }
 
+.texto1-1 {
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: flex-end;
+}
+
 /*_________________________________________________________________*/
 #contacto {
     
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcefff;
+    background-color: #efe0f3;
     height: 100vh;
 }
 
@@ -225,8 +232,11 @@ label{
     color: #000000;
 }
 
-h2{
+h5{
     color: #931fff;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+
 }
 
 .imagenf {
