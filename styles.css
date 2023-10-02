@@ -18,38 +18,75 @@ body {
 .navbar{
     background-color: #424242; 
     position: sticky;
-    top: 0;
-    padding: 15px;
-    overflow: hidden;
+    height: 48px;
+  
+    padding: 10px 12px;
+        
+     
+}
+
+.checkbox, .icons{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
     
-    
-   
+
 }
 
-/* Estilo para los elementos de la lista de navegación */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 4px;
-    text-align: center; 
-}
-nav ul li {
-    display: inline;
-    max-width: 100vh;
-    margin-right: 20px;
-    margin-left: 20px;
+.icons{
+    pointer-events: none;
+    font-size: 24px;
+
 }
 
-/* Estilo para los enlaces en la lista de navegación */
-nav ul li a {
-    text-decoration: none; 
-    color: #fff; 
-    font-weight: bold; 
-    font-size: 13px;
+.checkbox{
+    opacity: 0;
 }
 
-nav ul li.left {
-    float: left;
+.fi-br-cross{
+    display: none;
+}
+
+.checkbox:checked ~ .fi-bs-menu-burger{
+    display: none
+}
+
+.checkbox:checked ~ .fi-br-cross{
+    display: block;
+}
+
+.menu{
+    width: 200px;
+    position: absolute;
+    top: -106px;
+    z-index: -1;
+    right: 0px;
+    transition: 250ms;
+
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    background-color: #424242;
+    display: block;
+    padding: 10px 12px;
+
+}
+
+.menu li a:hover{
+    background-color: #931fff;
+}
+
+.checkbox:checked ~ .menu{
+   /* display: block;*/
+   top: 48px ;
 }
 
 @media (min-width: 560px){
@@ -82,8 +119,8 @@ nav ul li.left {
     background-color: #fcefff;
     height: 100vh;
     display: flex; 
-    justify-content: center; /* Alinea horizontalmente al centro */
-    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: center; 
+    align-items: center; 
     
         
 }
