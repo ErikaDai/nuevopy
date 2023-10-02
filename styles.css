@@ -1,3 +1,10 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -7,48 +14,101 @@ body {
     margin: 0;
 }
 
-#header {
+
+.navbar{
     background-color: #424242; 
     position: sticky;
-    top: 0;
-    padding: 15px;
-    overflow: hidden;
+    height: 48px;
+  
+    padding: 10px 12px;
+        
+     
+}
+
+.checkbox, .icons{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
     
+
+}
+
+.icons{
+    pointer-events: none;
+    font-size: 24px;
+
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.fi-br-cross{
+    display: none;
+}
+
+.checkbox:checked ~ .fi-bs-menu-burger{
+    display: none
+}
+
+.checkbox:checked ~ .fi-br-cross{
+    display: block;
+}
+
+.menu{
+    width: 200px;
+    position: absolute;
+    top: -106px;
+    z-index: -1;
+    right: 0px;
+    transition: 250ms;
+
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    background-color: #424242;
+    display: block;
+    padding: 10px 12px;
+
+}
+
+.menu li a:hover{
+    background-color: #931fff;
+}
+
+.checkbox:checked ~ .menu{
+   /* display: block;*/
+   top: 48px ;
+}
+
+@media (min-width: 560px){
+    .checkbox, .fi-bs-menu-burger, .fi-br-cross{
+        display: none;
+    }
+
+    .menu{
+        top: 0;
+        z-index: 1;
+        width: unset;
+        height: 48px;
+        display: flex;
+        
+    }
+
+    .menu li a{
+        height: 48px;
+        padding: 14px 12px 6px;
+
+    }
     
-   
-}
-
-/* Estilo para los elementos de la lista de navegación */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 4px;
-    text-align: center; 
-}
-nav ul li {
-    display: inline;
-    max-width: 100vh;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-/* Estilo para los enlaces en la lista de navegación */
-nav ul li a {
-    text-decoration: none; 
-    color: #fff; 
-    font-weight: bold; 
-    font-size: 13px;
-}
-
-nav ul li.left {
-    float: left;
-}
-nav ul li.right {
-    float: right;
-}
-
-nav a:hover {
-    color: #931fff; 
 }
 
 
@@ -56,7 +116,7 @@ nav a:hover {
 #inicio {
     
     padding: 20px;
-    background-color: #efe0f3;
+    background-color: #fcefff;
     height: 100vh;
     display: flex; 
     justify-content: center; /* Alinea horizontalmente al centro */
@@ -74,18 +134,21 @@ nav a:hover {
 }
 .texto1 {
     flex: 1;
-    color: #5e166d;
+    color: #000000;
     text-align: left; 
    
     padding: 20px; 
     font-size: 20px; 
 }
 
-.texto1 h1 {
+.texto1 h2 {
     flex: 1;
     font-size: 60px;
+    color: #931fff;
         
 }
+
+
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
    
@@ -115,7 +178,7 @@ nav a:hover {
 }
 .boton-superpuesto:hover {
                
-    background-color: #931fff;
+    background-color: #992bffb0;
     color: #ffffff;
     font-weight: bold; 
     font-size: 15px;
@@ -153,7 +216,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efe0f3;
+    background-color: #fcefff;
     height: 100vh;
 }
 
@@ -162,7 +225,7 @@ label{
 }
 
 h2{
-    color: #931fff;
+    color: #6d178f;
 }
 
 .imagenf {
