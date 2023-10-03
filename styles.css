@@ -207,7 +207,6 @@ body {
 
 /*__________________________________________________________________*/
 #boxes {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,41 +214,26 @@ body {
     height: 100vh;
 }
 
-.galeria {
-    display: flex;
-    overflow-y: auto;
-    padding: 16px;
-    align-items: center;
-    
-}
 .card{
-    margin-right: 10px;
-    position: relative;
-}
-
-.cuerpo-card{
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    background-color: #000000ab;
-    color: white;
-}
-
-.cuerpo-card h6, .cuerpo-card p{
-    margin: 0;
-
-}
-
-.cuerpo-card {
-    font-size: 20px;
+    display: flex;
+    width: 800px;
+    height: 400px;
 }
 
 .card img{
-    width: 200px;
+    width: 0px;
+    flex-grow: 1;
     object-fit: cover;
-    height: 300px;
+    opacity: .7;
+    transition: .7s ease;
 }
 
+.card img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(135%);
+}
 
 
 /*__________________________________________________________________*/
