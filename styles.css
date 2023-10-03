@@ -16,7 +16,7 @@ body {
 
 
 .navbar{
-    background-color: #424242; 
+    background-color: #c592ff; 
     position: sticky;
     height: 48px;
     top: 0;
@@ -86,7 +86,7 @@ body {
 .menu li a{
     text-decoration: none;
     color: white;
-    background-color: #424242;
+    background-color: #c592ff;
     display: block;
     padding: 10px 12px;
 
@@ -183,7 +183,7 @@ body {
 /*__________________________________________________________________*/
 /* Estilos para el botón superpuesto */
 .boton-superpuesto {
-    background-color: #931fff;
+    background-color: #c592ff;
     padding: 20px;
     border: none;
     cursor: pointer;
@@ -199,7 +199,7 @@ body {
 
 .boton-superpuesto:hover {
                
-    background-color: #992bffb0;
+    background-color: #931fff;
     color: #ffffff;
     font-weight: bold; 
     font-size: 15px;
@@ -210,7 +210,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #424242;
+    background-color: #c592ff;
     height: 100vh;
 }
 
@@ -254,19 +254,19 @@ body {
     
 }
 
-.texto3 {
-    color: #000000;
+.texto3 h4 {
+    flex: 1;
+    font-size: 40px;
     text-align: center; 
-    max-width: 95%; 
-    padding: 20px; 
-    font-size: 16px; 
+    font-family: 'Abril Fatface', cursive;      
+    color:#931fff;
 }
 
-.texto1-1 {
-    font-size: 17px;
-    font-weight: lighter;
-    font-family: 'Abril Fatface', cursive;
-    justify-content: flex-end;
+.texto3 p{
+    flex: 1;
+    font-size: 20px;   
+    text-align: center;       
+    color:#000000;
 }
 
 
@@ -276,7 +276,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #424242;
+    background-color: #c592ff;
     height: 100vh;
 }
 
@@ -287,12 +287,19 @@ body {
     
 }
 
-.texto4 {
-    color: #ffffff;
+.texto4 h4{
+    flex: 1;
+    font-size: 40px;
     text-align: center; 
-    max-width: 95%; 
-    padding: 20px; 
-    font-size: 19px; 
+    font-family: 'Abril Fatface', cursive;      
+    color:#ffffff;
+}
+
+.texto4 p{
+    flex: 1;
+    font-size: 20px;
+    text-align: center;         
+    color:#ffffff;
 }
 
 /*__________________________________________________________________*/
@@ -349,8 +356,8 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #424242;
-    height: 50vh;
+    background-color: #c592ff;
+    height: 40vh;
 }
 
 .contenedor4 {
@@ -366,4 +373,9 @@ h5{
     max-width: 95%; 
     padding: 20px; 
     font-size: 19px; 
+}
+
+
+.texto5 p{
+    color: white;
 }
