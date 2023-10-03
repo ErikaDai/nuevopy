@@ -72,7 +72,7 @@ body {
 .menu{
     width: 200px;
     position: absolute;
-    top: -115px;
+    top: -200px;
     z-index: -1;
     right: 0px;
     transition: 250ms;
@@ -101,7 +101,7 @@ body {
    top: 48px ;
 }
 
-@media (min-width: 560px){
+@media (min-width: 550px){
     .checkbox, .fi-bs-menu-burger, .fi-br-cross{
         display: none;
     }
@@ -140,7 +140,7 @@ body {
 .contenedor1 {
     display: flex;
     flex-wrap: wrap;     
-    max-width: 600px; 
+    max-width: 562px; 
     
     
 }
@@ -174,9 +174,9 @@ body {
     
 
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
     .imagenprincipal {
-        display: block; /* Mostrar la imagen cuando la pantalla sea lo suficientemente grande */
+        display:flex; /* Mostrar la imagen cuando la pantalla sea lo suficientemente grande */
     }
 }
 
@@ -184,13 +184,20 @@ body {
 /*__________________________________________________________________*/
 /* Estilos para el botón superpuesto */
 .boton-superpuesto {
-      
-    background-color: #931fff; 
-    color: white; 
-    padding: 20px; 
-    border: none; 
+    background-color: #931fff;
+    padding: 20px;
+    border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
 }
+
+.boton-superpuesto a {
+    color: white; /* Establecer el color del texto del enlace en blanco */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
 .boton-superpuesto:hover {
                
     background-color: #992bffb0;
@@ -200,12 +207,11 @@ body {
 }
 
 /*__________________________________________________________________*/
-#sobre-nosotros {
+#boxes {
     
-    padding: 20px;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background-color: #424242;
     height: 100vh;
 }
@@ -222,6 +228,32 @@ body {
     text-align: center; 
     max-width: 95%; 
     padding: 20px; 
+    font-size: 19px; 
+}
+
+/*__________________________________________________________________*/
+#sobre-nosotros {
+    
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #424242;
+    height: 100vh;
+}
+
+.contenedor3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto3 {
+    color: #ffffff;
+    text-align: center; 
+    max-width: 95%; 
+    padding: 20px; 
     font-size: 16px; 
 }
 
@@ -232,13 +264,40 @@ body {
     justify-content: flex-end;
 }
 
+
 /*_________________________________________________________________*/
+#ustedes {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424242;
+    height: 100vh;
+}
+
+.contenedor4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto4 {
+    color: #ffffff;
+    text-align: center; 
+    max-width: 95%; 
+    padding: 20px; 
+    font-size: 19px; 
+}
+
+/*__________________________________________________________________*/
+
 #contacto {
     
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efe0f3;
+    background-color: #fcefff;
     height: 100vh;
 }
 
