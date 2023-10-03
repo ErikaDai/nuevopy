@@ -16,7 +16,7 @@ body {
 
 
 .navbar{
-    background-color: #c592ff; 
+    background-color: #797979; 
     position: sticky;
     height: 48px;
     top: 0;
@@ -86,7 +86,7 @@ body {
 .menu li a{
     text-decoration: none;
     color: white;
-    background-color: #c592ff;
+    background-color: #797979;
     display: block;
     padding: 10px 12px;
 
@@ -128,7 +128,7 @@ body {
 #inicio {
     
     padding: 20px;
-    background-color: #fcefff;
+    background-color: #f5efff;
     height: 100vh;
     display: flex; 
     align-items: center; 
@@ -139,7 +139,7 @@ body {
 .contenedor1 {
     display: flex;
     flex-wrap: wrap;     
-    max-width: 562px; 
+    max-width: 450px; 
     
     
 }
@@ -167,13 +167,15 @@ body {
 
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
+    max-height: 750px;
+    
 }
 
 
     
 
 
-@media (min-width: 560px) {
+@media (min-width: 400px) {
     .imagenprincipal {
         display:flex; /* Mostrar la imagen cuando la pantalla sea lo suficientemente grande */
     }
@@ -183,7 +185,7 @@ body {
 /*__________________________________________________________________*/
 /* Estilos para el botón superpuesto */
 .boton-superpuesto {
-    background-color: #c592ff;
+    background-color: #a04eff;
     padding: 20px;
     border: none;
     cursor: pointer;
@@ -199,10 +201,10 @@ body {
 
 .boton-superpuesto:hover {
                
-    background-color: #931fff;
+    background-color: #8016e4;
     color: #ffffff;
     font-weight: bold; 
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /*__________________________________________________________________*/
@@ -210,7 +212,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c592ff;
+    background-color: #797979;
     height: 100vh;
 }
 
@@ -276,7 +278,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c592ff;
+    background-color: #797979;
     height: 100vh;
 }
 
@@ -356,7 +358,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c592ff;
+    background-color: #797979;
     height: 40vh;
 }
 
