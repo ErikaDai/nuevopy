@@ -126,59 +126,77 @@ body {
 
 /*______________________________________________________________________*/    
 #inicio {
-    
-    padding: 20px;
-    background-color: #f5efff;
+    width: 100%;
     height: 100vh;
-    display: flex; 
-    align-items: center; 
-    
-        
-}
-
-.contenedor1 {
     display: flex;
-    flex-wrap: wrap;     
-    max-width: 450px; 
-    
-    
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+    background-image: url(/imagenes/wallpaper.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 .texto1 {
-    flex: 1;
-    color: #000000;
-    text-align: left; 
-    padding: 20px; 
-    font-size: 20px; 
+    position: absolute;
+    left: 20px;
+    transform: translate(0, -50%);
+    z-index: 2;
+    width: 500px;
+    height: 500px;
+    
+    padding: 40px 40px;
+    text-align: left;
+    
+    background-color: rgba(255, 255, 255, 0.726);
+    color: #110606;
+    border: 0px inset #c0c0c0;
 }
+
 
 .texto1 h2 {
     flex: 1;
     font-size: 60px;
     font-family: 'Abril Fatface', cursive;      
     color:#931fff;
+    
 }
 
 .texto1 h3{
-    font-family: 'Abril Fatface', cursive;      
+    font-family: 'Abril Fatface', cursive;   
+    flex: 1;
+    font-size: 20px;   
     
 }
 
-
-.imagenprincipal {
-    display: none; /* Inicialmente oculto */
-    max-height: 750px;
-    
+.texto1 p{
+    flex: 1;
+    font-size: 20px; 
+      
 }
 
+.boton-superpuesto {
+    background-color: #a04eff;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
 
-    
+}
 
+.boton-superpuesto a {
+    color: white; /* Establecer el color del texto del enlace en blanco */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
 
-@media (min-width: 400px) {
-    .imagenprincipal {
-        display:flex; /* Mostrar la imagen cuando la pantalla sea lo suficientemente grande */
-    }
+.boton-superpuesto:hover {
+               
+    background-color: #8016e4;
+    color: #ffffff;
+    font-weight: bold; 
+    font-size: 16px;
 }
 
 
