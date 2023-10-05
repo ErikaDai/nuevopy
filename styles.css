@@ -234,7 +234,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #797979;
-    height: 30vh;
+    height: 40vh;
 }
 
 
@@ -249,7 +249,7 @@ body {
     flex: 1;
     font-size: 40px;
     text-align: center; 
-    font-family: 'Abril Fatface', cursive;      
+    font-family: 'Abril Fatface'; 
     color:#ffffff;
 }
 
@@ -263,9 +263,9 @@ body {
 #boxes2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: first baseline;
     background-color: #797979;
-    height: 70vh;
+    height: 60vh;
     text-align: center;
 }
 
@@ -313,7 +313,7 @@ body {
     flex: 1;
     font-size: 40px;
     text-align: center; 
-    font-family: 'Abril Fatface', cursive;      
+    font-family: 'Abril Fatface';   
     color:#931fff;
 }
 
@@ -348,7 +348,7 @@ body {
     flex: 1;
     font-size: 40px;
     text-align: center; 
-    font-family: 'Abril Fatface', cursive;      
+    font-family: 'Abril Fatface';     
     color:#ffffff;
 }
 
