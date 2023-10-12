@@ -415,24 +415,9 @@ h5{
     align-items: center;
     background-color: #797979;
     height: 40vh;
-}
-
-.contenedor5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.texto5 {
-    color: #ffffff;
-    text-align: center; 
-    max-width: 95%; 
-    padding: 20px; 
-    font-size: 19px; 
-}
-
-
-.texto5 p{
-    color: white;
-}
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+ 
+  
