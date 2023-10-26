@@ -388,32 +388,52 @@ h5{
     color: white;
     
 }
+
 /*_________________________________________________________________*/
 #footer {
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100% ;
+    height: 15vh;
+    bottom: 0;
+    left: 0;
     background-color: #fcefff;
-    height: 40vh;
-}
-
-.contenedor5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
-.texto5 {
-    color: #ffffff;
-    text-align: center; 
-    max-width: 95%; 
-    padding: 20px; 
-    font-size: 19px; 
+.footer-container{
+    width: 100%;
+    padding: 40px 30px 20px;
 }
 
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
 
-.texto5 p{
+.social-icons a{
+    text-decoration: none;
+    padding: 18px;
+    background-color: #931fff;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.social-icons a i{
+    font-size: 2em;
     color: white;
+    opacity: 0.9;
+}
+
+.social-icons a:hover{
+    background-color: #af5dfc;
+    transition: 0.5s;
+}
+
+.social-icons a:hover i{
+    color: aliceblue;
+        transition: 0.5s;
 }
