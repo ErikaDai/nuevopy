@@ -299,24 +299,22 @@ body {
 #snsn{
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center;    
+    height: 100vh;
     background-color: #fcefff;
 }
 
-.sobre-nosotros{
-    margin: 150px auto;
-    width: 70%;    
+.sobre-nosotros{    
+    max-width: 60%;    
     
 }
 
 .sn-img{
-
-    max-width: 350px;
+    display: flex;
+    width: 350px;
     float: left;
     margin-right: 20px;
-    
-
+  
 }
 
 
@@ -325,8 +323,11 @@ body {
     text-align: justify;
 }
 
-.text-box h5{
+.text-box h6{
     font-size: 45px;
+    font-family: 'Abril Fatface';
+    color: #931fff;
+    
 }
 
 .text-box p{
