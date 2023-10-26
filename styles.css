@@ -13,9 +13,6 @@ body {
     top: 0;
     padding: 15px;
     overflow: hidden;
-    
-    
-   
 }
 
 /* Estilo para los elementos de la lista de navegación */
@@ -37,8 +34,9 @@ nav ul li a {
     text-decoration: none; 
     color: #fff; 
     font-weight: lighter;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 nav ul li.left {
@@ -97,10 +95,13 @@ nav a:hover {
 
 .imagenprincipal {
     display: none; /* Inicialmente oculto */
-   
+}
 
-
-    
+.texto1-1 {
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: flex-end;
 }
     
 
