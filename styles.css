@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    background-color: black;
+    background-color: #fcefff;
     margin: 0;
 }
 
@@ -276,6 +276,7 @@ body {
     display: flex;
     width: 800px;
     height: 400px;
+    
 }
 
 .card img{
@@ -295,37 +296,46 @@ body {
 
 
 /*__________________________________________________________________*/
-#sobre-nosotros {
-    
-    padding: 20px;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    background-color: #fcefff;
-    height: 100vh;
-}
-
-.contenedor3 {
+#snsn{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: #fcefff;
+}
+
+.sobre-nosotros{
+    margin: 150px auto;
+    width: 70%;    
     
 }
 
-.texto3 h4 {
-    flex: 1;
-    font-size: 40px;
-    text-align: center; 
-    font-family: 'Abril Fatface';   
-    color:#931fff;
+.sn-img{
+
+    max-width: 350px;
+    float: left;
+    margin-right: 20px;
+    
+
 }
 
-.texto3 p{
-    flex: 1;
-    font-size: 20px;   
-    text-align: center;       
-    color:#000000;
+
+.text-box{
+    color: #000000;
+    text-align: justify;
 }
+
+.text-box h5{
+    font-size: 45px;
+}
+
+.text-box p{
+    font-size: 16px;
+}
+
+
+
+
 
 /*________________________________________*/
 
