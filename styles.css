@@ -163,7 +163,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     background-color: #efe0f3;
-    height: 100vh;
+    min-height: 120vh;
 }
 
 label{
