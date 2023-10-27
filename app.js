@@ -9,4 +9,4 @@ function valFormulario() {
     }
 }
 
-const enviarMensaje = () => alert("ATENCIÓN: Se borrarán todos los campos. ¿Confirma la operación? ")
+const enviarMensaje = () => alert("ATENCIÓN: Esta acción borrará todos los cambos. ¿Confirma?")
