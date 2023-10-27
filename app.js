@@ -5,7 +5,8 @@ function valFormulario() {
         alert("No puede dejar vacío el espacio Nombre");
         return false;
     } else {
-        alert("Nombre registrado correctamente");
+        alert("USUARIO registrado correctamente");
     }
 }
 
+const enviarMensaje = () => alert("ATENCIÓN: Se borrarán todos los campos. ¿Confirma la operación? ")
