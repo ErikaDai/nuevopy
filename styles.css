@@ -228,3 +228,20 @@ h2{
     padding: 20px; 
     font-size: 19px; 
 }
+
+/* Estilos Otros productos - api */
+
+#catálogo2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe0f3;
+    min-height: 120vh;
+
+}
+h2{
+    color: #931fff;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+}
