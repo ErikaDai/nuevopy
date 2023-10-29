@@ -416,6 +416,29 @@ h5{
     justify-content: center;
 }
 
+.social-icons a{
+    text-decoration: none;
+    padding: 18px;
+    background-color: #931fff;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+
+.social-icons a:hover{
+    background-color: #af5dfc;
+    transition: 0.5s;
+}
+
+.social-icons a:hover i{
+    color: aliceblue;
+        transition: 0.5s;
+}
 
 .texto4 {
     color: #ffffff;
