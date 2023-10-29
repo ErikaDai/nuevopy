@@ -349,8 +349,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#797979;
-    height: 100vh;
+    background-color: #efe0f3;
+    min-height: 120vh;
 }
 
 label{
@@ -416,6 +416,32 @@ h5{
     justify-content: center;
 }
 
+
+.texto4 {
+    color: #ffffff;
+    text-align: center; 
+    max-width: 95%; 
+    padding: 20px; 
+    font-size: 19px; 
+}
+
+/* Estilos Otros productos - api */
+
+#catálogo2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe0f3;
+    min-height: 120vh;
+
+}
+h2{
+    color: #931fff;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+  
+=======
 .social-icons a{
     text-decoration: none;
     padding: 18px;
@@ -438,4 +464,5 @@ h5{
 .social-icons a:hover i{
     color: aliceblue;
         transition: 0.5s;
+
 }

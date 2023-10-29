@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
@@ -28,10 +30,10 @@
             <li> <a href="#inicio">Inicio</a></li>
             <li> <a href="#boxes1">Boxes</a></li>
             <li> <a href="#snsn">Sobre nosotros</a></li>
+            <li class="left"> <a href="#catálogo2">Te puede interesar</a></li>    
             <li> <a href="#contacto">Contacto</a></li>   
         </ul>
     </nav>
-    
 
     <section id="inicio">     
         <div class="inicio">
@@ -97,20 +99,20 @@
 
     <section id="contacto">      
         <div class="contacto">
-            <h5>Formulario de contacto</h5>
-        
-            <form action="">
-                <label for="firstname">Nombre:</label>
-                <input size=15 id="firstname" type="text" required>
+
+            <h2>Formulario de contacto</h2>
+            <form id="form" onsubmit="return valFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input size=15 id="nombre" type="text">
                 <br><br>
-                <label for="lastname">Apellido:</label>
-                <input size=15 id="lastname" type="text" required>
+                <label id="lastname">Apellido:
+                <input size=15 id="lastname" type="text"></label>
                 <br><br>
-                 <label for="floatingInputValue">E-Mail:</label>
-                 <input type="email" class="form-control" id="floatingInputValue" placeholder="tucorreo@ejemplo.com" required>
+                <label id="floatingInputValue">E-Mail:
+                <input type="email" class="form-control" id="floatingInputValue" placeholder="tucorreo@ejemplo.com"></label>
                 <br><br>
-                <label for="Telefono">Teléfono:</label>
-                <input size=15 id="E-mail" type="text">
+                <label id="Telefono">Teléfono:
+                <input size=15 id="E-mail" type="text"></label>
                 <p class="motivo1">Motivo de consulta:</p>
                 <select name="motivo">
                     <option>Precios</option>
@@ -120,16 +122,23 @@
                 </select>
                 <br><br>
                 <p class="mensaje1">Mensaje:</p>
-                <textarea name="comments" id="" cols="40" rows="15">Escribe aquí</textarea>
+                <textarea name="comments" id="" cols="35" rows="15">Escribe aquí</textarea>
                 <br>
                 <button type="submit" class="enviar">Enviar</button>
-                <button type="submit" class="borrar">Borrar</button>
+                <button type="reset" onClick="enviarMensaje()" class="borrar">Borrar</button>
                 
-            </div>
-                
+                           
             </form>
+        </div> 
         
         </div>
+
+    </section>
+    <section>
+        <div id="catálogo2">
+        <button type="submit" onclick="CargarProductos()"><h2>Otros productos que te pueden interesar</h2></Button>
+        </div>
+    
     </section>
 
     <section id="footer">  
