@@ -344,7 +344,11 @@ body {
 
 /*__________________________________________________________________*/
 
+<<<<<<< HEAD
 #contacto{
+=======
+#contacto {
+>>>>>>> f9e76272dc7a094205534f54165b8a7a63051202
     
     display: flex;
     justify-content: center;
@@ -471,8 +475,13 @@ h2{
     color: #931fff;
     font-size: 40px;
     font-family: 'Abril Fatface', cursive;
+<<<<<<< HEAD
 }
 
+=======
+  
+=======
+>>>>>>> f9e76272dc7a094205534f54165b8a7a63051202
 .social-icons a{
     text-decoration: none;
     padding: 18px;
