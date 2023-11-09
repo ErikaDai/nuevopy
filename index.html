@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
@@ -28,10 +30,10 @@
             <li> <a href="#inicio">Inicio</a></li>
             <li> <a href="#boxes1">Boxes</a></li>
             <li> <a href="#snsn">Sobre nosotros</a></li>
+            <li class="left"> <a href="#clientes">Ustedes</a></li>    
             <li> <a href="#contacto">Contacto</a></li>   
         </ul>
     </nav>
-    
 
     <section id="inicio">     
         <div class="inicio">
@@ -43,7 +45,7 @@
                             Dentro de nuestras Boxes, te esperan emocionantes categorias diseñadas para sorprenderte <br>
                             Disfrutala tu mismo o compartila con alguien especial! 
                         </p> 
-                            <br><br><button class="boton-superpuesto">
+                            <br><button class="boton-superpuesto">
                                 <a href="#boxes1">Quiero una!</a>
                             </button> 
                 </div>
@@ -92,47 +94,65 @@
                
     </div>
     </section>
+
+    <section id="clientes">
+        <div class="containerC">
+            <h1>Clientes Felices </h1><br>
+            <div id="user-info">      
+            </div>
+            <button onclick="getRandomUser()">Siguiente</button>
+          </div>
+          <script src="script.js"></script>    
+    </section>
     
 
 
     <section id="contacto">      
         <div class="contacto">
-            <h5>Formulario de contacto</h5>
-        
-            <form action="">
-                <label for="firstname">Nombre:</label>
-                <input size=15 id="firstname" type="text" required>
+
+            <h2>Formulario de contacto</h2>
+            <form id="form" onsubmit="return valFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input size=15 id="nombre" type="text">
                 <br><br>
-                <label for="lastname">Apellido:</label>
-                <input size=15 id="lastname" type="text" required>
+                <label id="lastname">Apellido:
+                <input size=15 id="lastname" type="text"></label>
                 <br><br>
-                 <label for="floatingInputValue">E-Mail:</label>
-                 <input type="email" class="form-control" id="floatingInputValue" placeholder="tucorreo@ejemplo.com" required>
+                <label>E-Mail:
+                <input type="text" placeholder="tucorreo@ejemplo.com"></label>
                 <br><br>
-                <label for="Telefono">Teléfono:</label>
-                <input size=15 id="E-mail" type="text">
-                <p class="motivo1">Motivo de consulta:</p>
-                <select name="motivo">
-                    <option>Precios</option>
-                    <option>Envios</option>
-                    <option>Personalización de box</option>
-                    <option>Otros</option>
-                </select>
-                <br><br>
+                <label id="Telefono">Teléfono:
+                <input size=15 id="Telefono" type="text"></label>
+                <BR></BR>
                 <p class="mensaje1">Mensaje:</p>
-                <textarea name="comments" id="" cols="40" rows="15">Escribe aquí</textarea>
+                <textarea class="escribe" name="comments" placeholder="Escribe aquí"></textarea>
                 <br>
                 <button type="submit" class="enviar">Enviar</button>
-                <button type="submit" class="borrar">Borrar</button>
-                
-            </div>
-                
+                <button type="reset" onClick="enviarMensaje()" class="borrar">Borrar</button>                        
             </form>
+            <script>
+                function valFormulario() {
+    let nombre = document.getElementById("nombre").value.trim();
+
+    if (nombre === "" || nombre.lenght == 0) {
+        alert("No puede dejar vacío el espacio Nombre");
+        return false;
+    } else {
+        alert("REGISTRACIÓN exitosa");
+    }
+}
+
+const enviarMensaje = () => alert("ATENCIÓN: Esta acción borrará todos los cambos. ¿Confirma?")
+            </script>
+        </div> 
         
         </div>
+
     </section>
 
-    <section id="footer">  
+
+
+<section id="footer">  
         <div class="footer-container">
             <div class="social-icons">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -146,7 +166,6 @@
         
         <span class="copyright">&copy; 2023, Codo a Codo. All Rights reserved to Erika and Natalia</span>
     </section>
-
 </body>
 </html>
 
